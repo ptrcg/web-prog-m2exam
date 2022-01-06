@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="side">
+            <div class="side" id='side'>
                 <div class="header">
                     <div class="avatar">
                         <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="">
@@ -26,65 +26,38 @@
                     </ul>
                 </div>
 
-
-                <div class="messages">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/lego/2.jpg" alt="">
-                    </div>
-                    <div class="friend">
-                        <div class="user">Lego Man 1</div>
-                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
-                    </div>
-                </div>
-
-
-                <div class="messages">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/lego/3.jpg" alt="">
-                    </div>
-                    <div class="friend">
-                        <div class="user">Lego Man 2</div>
-                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
-                    </div>
-                </div>
-
-
-                <div class="messages">
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/lego/4.jpg" alt="">
-                    </div>
-                    <div class="friend">
-                        <div class="user">Lego Man 3</div>
-                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing</div>
-                    </div>
-                </div>
-
             </div>
             <div class="content">
                 <div class="card">
                     <div class="user">
-                        <img class="user" src="https://randomuser.me/api/portraits/lego/5.jpg" alt="">
+                        <img class="user" id='user' src="img/0.png" alt="">
                         <div class="profile">
-                            <div class="name">Lego Man 4 <span> 20</span></div>
+                            <div class='name-age'>
+                                <div class="name" id='name'>Feliz</div>
+                                <div class='age' id='age'>, 12</div>
+                            </div>
+                            
                             <div class="local">
                                 <i class="fas fa-map-marker alt"></i>
-                                <span>20 kilometers away</span>
+                                <span id='distance'>20 kilometers away</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="buttons">
                     <div class="no">
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-times" onclick="unmatchFunction()"></i>
                     </div>
                     <div class="star">
                         <i class="fas fa-star fa"></i>
                     </div>
                     <div class="heart">
-                        <i class=" fas fa-heart"></i>
+                        <i class=" fas fa-heart" onclick="heartFunction()"></i>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src='main.js'></script>
     </body>
 </html>
