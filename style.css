@@ -115,9 +115,6 @@ body {
   text-shadow: 1px 1px 3px #444;
   float: left;
 }
-.content .card .user .name span {
-  font-size: 26px;
-}
 .content .card .local {
   display: flex;
   align-items: center;
